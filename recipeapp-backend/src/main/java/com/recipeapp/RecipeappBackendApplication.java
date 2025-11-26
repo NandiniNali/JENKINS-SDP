@@ -9,13 +9,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class SpringBootProjectApplication extends SpringBootServletInitializer
-
-public class RecipeappBackendApplication {
+public class RecipeappBackendApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(RecipeappBackendApplication.class, args);
-        System.out.println("Backend is running...");    }
+        System.out.println("Backend is running...");
+    }
 
     @Bean
     public CommandLineRunner seedAdmin(AdminRepository adminRepo) {
